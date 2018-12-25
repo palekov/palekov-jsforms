@@ -1360,6 +1360,10 @@ fieldset {
 	color: #fff;
 }
 
+.error-hide {
+	display: none;
+}
+
 .no-radius-top {
 	border-radius: 0 0 4px 4px;
 }
