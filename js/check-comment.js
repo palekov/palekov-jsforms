@@ -27,8 +27,8 @@ $(document).ready(function(){
 		var _formValidate = function (event) {
 			console.log('Hello from _formValidate');
     		event.preventDefault();
-
-    		if (_commentTextarea.val() == '') {
+    		//_commentTextarea= _commentTextarea.trim();
+    		if (_commentTextarea.val().trim() == '') {
     			_commentErrorEmpty.fadeIn(700);
     		} else {
     			_commentErrorEmpty.fadeOut();
