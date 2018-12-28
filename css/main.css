@@ -1360,6 +1360,22 @@ fieldset {
 	color: #fff;
 }
 
+.email-error-hide {
+	display: none;
+}
+
+.email-format-error-hide {
+	display: none;
+}
+
+.password-error-hide {
+	display: none;
+}
+
+.email-password-error-hide {
+	display: none;
+}
+
 .no-radius-top {
 	border-radius: 0 0 4px 4px;
 }
