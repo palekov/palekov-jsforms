@@ -30,22 +30,22 @@
 				<div class="login-form__background">
 					<div class="login-form pt-30 pb-30">
 						<h1 class="text-center login-heading mt-0 pt-0">Регистрация</h1>
-						<form>
-							<div class="notify notify--error mb-20">Введите email</div>
-							<div class="notify notify--error mb-20">Неверный формат email</div>
-							<div class="notify notify--error mb-20">Введите пароль</div>
+						<form id="reg-form" action="success.html">
+							<div id="emailErrorEmpty" class="notify notify--error mb-20 email-error-hide">Введите email</div>
+							<div id="emailErrorInvalid" class="notify notify--error mb-20 email-format-error-hide">Неверный формат email</div>
+							<div id="passwordErrorEmpty" class="notify notify--error mb-20 password-error-hide">Введите пароль</div>
 							<div class="notify no-paddings">
-								<div class="notify no-radius-bottom notify--error">Данный email уже занят</div>
-								<div class="notify no-radius-top">
+								<div id="emailErrorBusy" class="notify no-radius-bottom notify--error email-busy-error-hide">Данный email уже занят</div>
+								<div id="emailErrorBusy" class="notify no-radius-top email-busy-error-hide">
 									<p>Используйте другой email чтобы создать новый аккаунт.</p>
 									<p> Или воспользуйтесь
 										<a href="#!">восстановлением пароля </a>, чтобы войти на сайт.</p>
 								</div>
 							</div>
-							<input class="input-form-registration" name="email" type="email" placeholder="Email" />
-							<input class="input-form-registration" name="password" type="password" placeholder="Пароль" />
+							<input id="regEmailText" class="input-form-registration" name="email" type="email" placeholder="Email" />
+							<input id="regPasswordText" class="input-form-registration" name="password" type="password" placeholder="Пароль" />
 							<div class="text-center pt-30">
-								<a class="button button--enter" href="#">Регистрация</a>
+								<input class="button button--enter" type="submit" value="Регистрация">
 							</div>
 						</form>
 					</div>

@@ -1368,6 +1368,10 @@ fieldset {
 	display: none;
 }
 
+.email-busy-error-hide {
+	display: none;
+}
+
 .password-error-hide {
 	display: none;
 }
